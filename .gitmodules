@@ -1,0 +1,6 @@
+[submodule "diffusers"]
+	path = diffusers
+	url = https://github.com/huggingface/diffusers.git
+[submodule "ToCa"]
+	path = ToCa
+	url = https://github.com/Shenyi-Z/ToCa.git
