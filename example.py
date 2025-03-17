@@ -11,6 +11,8 @@ pipeline = FluxPipeline.from_pretrained(model_path,
 
 def inference(prompt="a cat.", steps=28, seed=19):
     token_cache_obj = TokenCacheObj(steps)
+    # token_cache_obj = None
+    # assign token_cache_obj as None will disable token cache, behave as the original model
     image = pipeline(
         prompt,
         height=1024,
